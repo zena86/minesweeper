@@ -1,0 +1,116 @@
+.cell {
+  width: 50px;
+  height: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+
+  @media (max-width: 900px) {
+    width: 40px;
+    height: 40px;
+  }
+
+  .dark & {
+    background-color: lighten(#292C6D, 50%);
+    border: 1px solid #292C6D;
+  }
+
+  &.one {
+    color: #0D8549;
+  }
+
+  &.two {
+    color: #185ADB;
+  }
+
+  &.three {
+    color: #EC255A;
+  }
+
+  &.four {
+    color: #FF6E31;
+  }
+
+  &.five {
+    color: #99154E;
+  }
+
+  &.six {
+    color: #A31ACB;
+  }
+
+  &.seven {
+    color: #3C486B;
+  }
+
+  &.eight {
+    color: #F9C11C;
+  }
+
+  .medium & {
+    width: 33px;
+    height: 33px;
+    font-size: 16px;
+
+    @media (max-width: 900px) {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .hard & {
+    width: 22px;
+    height: 22px;
+    font-size: 14px;
+
+    @media (max-width: 900px) {
+      width: 19px;
+      height: 19px;
+      font-size: 12px;
+    }
+  }
+
+  &.open {
+    background-color: #fff;
+    border: 1px solid #bbb;
+
+    .dark & {
+      background-color: lighten(#F7B7F3, 8%);
+      border: 1px solid #292C6D;
+    }
+  }
+
+  &.open.loser {
+
+    background-color: #FCFFB2;
+
+    .dark & {
+      background-color: #FFCB42;
+    }
+  }
+
+  &.open.error {
+    position: relative;
+
+    &:after {
+      content: url('./../../assets/img/close-25.png');
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &.mined {
+    border: 1px solid #bbb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &.flag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

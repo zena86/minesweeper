@@ -1,0 +1,72 @@
+.switcher {
+  margin-right: 20px;
+  margin-bottom: 5px;
+  display: inline-block;
+  padding: 4px;
+  background: #292C6D;
+  min-width: 110px;
+  border-radius: 30px;
+  position: relative;
+}
+.dark .switcher {
+  background-color: #FFCB42;
+}
+
+.switcher-input {
+  display: none;
+}
+
+.switcher-label {
+  float: left;
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  position: inherit;
+  z-index: 10;
+  transition: color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+.dark .switcher-label {
+  color: #292C6D;
+}
+
+.light-btn {
+  width: 53%;
+}
+
+.dark-btn {
+  width: 37%;
+}
+
+.switcher-toggle {
+  position: absolute;
+  float: left;
+  height: 30px;
+  width: 47%;
+  font-size: 12px;
+  line-height: 30px;
+  cursor: pointer;
+  background-color: #EC255A;
+  border-radius: 30px;
+  left: 5px;
+  top: 4px;
+  transition: left 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+.dark .switcher-toggle {
+  background-color: #292C6D;
+}
+
+.switcher-input:checked + .switcher-label {
+  color: #fff;
+}
+.dark .switcher-input:checked + .switcher-label {
+  color: #FFCB42;
+}
+
+.dark:checked ~ .switcher-toggle {
+  left: 55px;
+}

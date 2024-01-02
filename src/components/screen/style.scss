@@ -1,0 +1,53 @@
+.screen {
+  padding: 25px 25px 12px 25px;
+  border: 1px solid #D1D1D1;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 0 10px rgba(41, 44, 109, 0.1);
+  margin-bottom: 30px;
+  border-radius: 5px;
+  width: 600px;
+
+  @media (max-width: 900px) {
+    width: 450px;
+    max-width: 450px;
+    padding: 13px 13px 0 13px;
+    height: 190px;
+  }
+
+  body.dark & {
+    color: white;
+    border: 1px solid #292C6D;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+
+.screen-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.screen-column {
+  margin-right: 20px;
+
+  @media (max-width: 900px) {
+    margin-right: 10px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.dog {
+  width: 70px;
+  height: 70px;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: 10px;
+  border-radius: 50%;
+
+  &:after {
+    content: url('./../../assets/img/dog.png');
+  }
+}

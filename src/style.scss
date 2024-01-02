@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "Merienda-Bold";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Merienda-Bold"),
+      url("./assets/fonts/Merienda-Bold.woff2") format("woff2"),
+      url("./assets/fonts/Merienda-Bold.woff") format("woff");
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+body {
+  font-family: "Merienda-Bold", "Arial", sans-serif;
+  color: #292C6D;
+  font-size: 18px;
+  position: relative;
+  min-height: 100vh;
+  min-width: 500px;
+
+  &.active {
+    overflow-y: hidden;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./assets/img/bg.png');
+    background-position: center;
+    background-size: cover;
+    opacity: 0.4;
+  }
+}
+
+body.dark:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/img/bg-dark.jpg');
+  opacity: 0.8;
+}

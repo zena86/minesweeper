@@ -1,0 +1,99 @@
+.cell {
+  width: 50px;
+  height: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+}
+@media (max-width: 900px) {
+  .cell {
+    width: 40px;
+    height: 40px;
+  }
+}
+.dark .cell {
+  background-color: #b3b5e2;
+  border: 1px solid #292C6D;
+}
+.cell.one {
+  color: #0D8549;
+}
+.cell.two {
+  color: #185ADB;
+}
+.cell.three {
+  color: #EC255A;
+}
+.cell.four {
+  color: #FF6E31;
+}
+.cell.five {
+  color: #99154E;
+}
+.cell.six {
+  color: #A31ACB;
+}
+.cell.seven {
+  color: #3C486B;
+}
+.cell.eight {
+  color: #F9C11C;
+}
+.medium .cell {
+  width: 33px;
+  height: 33px;
+  font-size: 16px;
+}
+@media (max-width: 900px) {
+  .medium .cell {
+    width: 30px;
+    height: 30px;
+  }
+}
+.hard .cell {
+  width: 22px;
+  height: 22px;
+  font-size: 14px;
+}
+@media (max-width: 900px) {
+  .hard .cell {
+    width: 19px;
+    height: 19px;
+    font-size: 12px;
+  }
+}
+.cell.open {
+  background-color: #fff;
+  border: 1px solid #bbb;
+}
+.dark .cell.open {
+  background-color: #fbdcf9;
+  border: 1px solid #292C6D;
+}
+.cell.open.loser {
+  background-color: #FCFFB2;
+}
+.dark .cell.open.loser {
+  background-color: #FFCB42;
+}
+.cell.open.error {
+  position: relative;
+}
+.cell.open.error:after {
+  content: url("./../../assets/img/close-25.png");
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.cell.mined {
+  border: 1px solid #bbb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cell.flag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

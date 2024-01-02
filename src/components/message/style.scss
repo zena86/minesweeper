@@ -1,0 +1,40 @@
+.message {
+  margin-top: 30px;
+  padding-left: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &:before {
+    content: url('./../../assets/img/smile-40.png');
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 40px;
+  }
+
+  &.win {
+    position: relative;
+
+    &:before {
+      content: url('./../../assets/img/win.svg');
+      position: absolute;
+      top: 40%;
+      left: 0;
+      width: 40px;
+      transform: translateY(-50%);
+    }
+  }
+
+  &.lose {
+    position: relative;
+    padding-left: 65px;
+
+    &:before {
+      content: url('./../../assets/img/lose-50.png');
+      position: absolute;
+      top: -15px;
+      left: 0;
+    }
+  }
+}

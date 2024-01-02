@@ -1,0 +1,30 @@
+.info {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.info-title {
+  margin-right: 20px;
+  font-weight: 700;
+}
+@media (max-width: 900px) {
+  .info-title {
+    margin-right: 10px;
+  }
+}
+
+.info-value {
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body.dark .info-value {
+  color: white;
+  border: 1px solid #292C6D;
+  background-color: rgba(0, 0, 0, 0.2);
+}

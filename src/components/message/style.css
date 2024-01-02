@@ -1,0 +1,35 @@
+.message {
+  margin-top: 30px;
+  padding-left: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.message:before {
+  content: url("./../../assets/img/smile-40.png");
+  position: absolute;
+  top: -15px;
+  left: 0;
+  width: 40px;
+}
+.message.win {
+  position: relative;
+}
+.message.win:before {
+  content: url("./../../assets/img/win.svg");
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 40px;
+  transform: translateY(-50%);
+}
+.message.lose {
+  position: relative;
+  padding-left: 65px;
+}
+.message.lose:before {
+  content: url("./../../assets/img/lose-50.png");
+  position: absolute;
+  top: -15px;
+  left: 0;
+}

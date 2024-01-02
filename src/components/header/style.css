@@ -1,0 +1,22 @@
+.header {
+  padding: 20px 0 35px;
+  position: relative;
+  z-index: 5;
+  min-width: 485px;
+}
+
+.header-body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.header-col {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-col.right {
+  justify-content: end;
+  flex-wrap: nowrap;
+}
